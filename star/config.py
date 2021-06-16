@@ -20,9 +20,11 @@
 # Ahmed A. A. Osman
 
 import os
-path_male_star = ''
-path_female_star = ''
-path_neutral_star = ''
+learning_smpl_root = os.path.abspath(".").split('learning-smpl')[0] + 'learning-smpl'
+
+path_male_star = os.path.join(learning_smpl_root,'data/body_models/star/star_1_1/male/model.npz')
+path_female_star = os.path.join(learning_smpl_root,'data/body_models/star/star_1_1/female/model.npz')
+path_neutral_star = os.path.join(learning_smpl_root,'data/body_models/star/star_1_1/neutral/model.npz')
 
 data_type = 'float32'
 
